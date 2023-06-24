@@ -1,16 +1,21 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# e-commerce Back-end
+# e-Commerce Back-end
 This is a back end for an e-commerce website that uses the latest technologies.
 
 ## Description
-
+This is a functional Express.js API.<br>
+When you add your database name, MySQL username, and MySQL password to an environment variable file you are able to connect to a database using Sequelize.<br>
+When you enter schema and seed commands then a development database is created and is seeded with test data.<br>
+When you enter the command to invoke the application the server is started and the Sequelize models are synced to the MySQL database.<br>
+When you open API GET routes in Insomnia Core for categories, products, or tags the data for each of these routes is displayed in a formatted JSON.<br>
+When you test API POST, PUT, and DELETE routes in Insomnia Core you are able to successfully create, update, and delete data in your database.<br>
 
 ## Links
-**GitHub:** https://github.com/david-leverenz/SQL-employee-tracker<br>
+**GitHub:** <br>
 **Walkthrough Video:** <br>
 **Live Link:** N/A <br>
 **Screen Shot:** <br>
-![image](https://github.com/david-leverenz/SQL-employee-tracker/assets/131185593/af58bb16-1b5c-405c-ba19-64c1474ca5b9)
+
 
 
 ## Getting Started
