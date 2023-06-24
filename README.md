@@ -11,7 +11,7 @@ When you open API GET routes in Insomnia Core for categories, products, or tags 
 When you test API POST, PUT, and DELETE routes in Insomnia Core you are able to successfully create, update, and delete data in your database.<br>
 
 ## Links
-**GitHub:** <br>
+**GitHub:** https://github.com/david-leverenz/e-commerce<br>
 **Walkthrough Video:** <br>
 **Live Link:** N/A <br>
 **Screen Shot:** <br>
