@@ -38,21 +38,22 @@ router.get('/:id', async (req, res) => {
 });
 
 // create new product - getting an error with this one.  It doesn't like line 57 which, I believe, was written for us.  I can't figure it out.  Moving on...
-// router.post('/', async (req, res) => {
-//   /* req.body should look like this...
-//     {
-//       product_name: "Basketball",
-//       price: 200.00,
-//       stock: 3,
-//       tagIds: [1, 2, 3, 4]
-//     }
-//   */
-//  try {
-//   const productData = await Product.create(req.body);
-//   res.status(200).json(productData);
-// } catch (err) {
-//   res.status(400).json(err);
-// }
+router.post('/', async (req, res) => {
+  /* req.body should look like this...
+    {
+      product_name: "Basketball",
+      price: 200.00,
+      stock: 3,
+      tagIds: [1, 2, 3, 4]
+    }
+  */
+ try {
+  const productData = await Product.create(req.body);
+  res.status(200).json(productData);
+} catch (err) {
+  res.status(400).json(err);
+}
+});
 // },
 //   Product.create(req.body)
 //     .then((product) => {
@@ -77,7 +78,6 @@ router.get('/:id', async (req, res) => {
 // );
 
 // update product
-
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
@@ -122,24 +122,23 @@ router.put('/:id', (req, res) => {
     });
 });
 
-// Don't want to test this route until I can create products too!!!
-// router.delete('/:id', async (req, res) => {
-//   // delete one product by its `id` value
-//   try {
-//     const productData = await Product.destroy({
-//       where: {
-//         id: req.params.id,
-//       },
-//     });
+router.delete('/:id', async (req, res) => {
+  // delete one product by its `id` value
+  try {
+    const productData = await Product.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
 
-//     if (!productData) {
-//       res.status(404).json({ message: 'No product found with that id!' });
-//       return;
-//     }
+    if (!productData) {
+      res.status(404).json({ message: 'No product found with that id!' });
+      return;
+    }
 
-//     res.status(200).json(productData);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    res.status(200).json(productData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 module.exports = router;
