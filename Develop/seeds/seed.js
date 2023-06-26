@@ -13,7 +13,7 @@ const seedDatabase = async () => {
 
   const products = await Product.bulkCreate(productSeedData);
 
-  // const productTags = await ProductTag.bulkCreate(productTagSeedData);
+  const productTags = await ProductTag.bulkCreate(productTagSeedData);
 
   // const tags = await Tag.bulkCreate(tagSeedData);
 
