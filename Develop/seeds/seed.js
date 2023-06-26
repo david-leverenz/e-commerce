@@ -13,27 +13,27 @@ const seedDatabase = async () => {
 
   const products = await Product.bulkCreate(productSeedData);
 
-  const productTags = await ProductTag.bulkCreate(productTagSeedData);
+  // const productTags = await ProductTag.bulkCreate(productTagSeedData);
 
-  const tags = await Tag.bulkCreate(tagSeedData);
+  // const tags = await Tag.bulkCreate(tagSeedData);
 
-  for (const product of productSeedData) {
-    const newProduct = await Product.create({
-      category_id: id,
-    });
-  }
+  // for (const product of productSeedData) {
+  //   const newProduct = await Product.create({
+  //     category_id: id,
+  //   });
+  // }
+  
+  // for (const productTag of productTagSeedData) {
+  //   const newproductTag = await ProductTag.create({
+  //     product_id: id, tag_id: id,
+  //   });
+  // }
 
-  for (const productTag of productTagSeedData) {
-    const newproductTag = await ProductTag.create({
-      product_id: id, tag_id: id,
-    });
-  }
-
-  for (const tag of tagSeedData) {
-    const newproductTag = await Tag.create({
-      product_id: id, tag_id: id,
-    });
-  }
+  // for (const tag of tagSeedData) {
+  //   const newproductTag = await Tag.create({
+  //     product_id: id, tag_id: id,
+  //   });
+  // }
 
   process.exit(0);
 };
