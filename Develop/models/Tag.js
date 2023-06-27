@@ -2,8 +2,10 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
+// Initialize Tag model (table) by extending off Sequelize's Model class
 class Tag extends Model {}
 
+// Tag model has a primary key that auto increments and another columnto hold the tag_name.
 Tag.init(
   {
     id: {

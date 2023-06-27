@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const apiRoutes = require('./api');
+const apiRoutes = require('./api'); // Look in the api folder.
 
+// index.js starts the "chain" with a /api route.
 router.use('/api', apiRoutes);
 
 router.use((req, res) => {

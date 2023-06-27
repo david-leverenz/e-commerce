@@ -6,7 +6,7 @@ const sequelize = require('../config/connection');
 // Initialize Product model (table) by extending off Sequelize's Model class
 class Product extends Model {}
 
-// set up fields and rules for Product model
+// Product model has a primary key that auto increments and other columns to hold data about the product.  It has a foreign key called category_id that references the id from the "category" model.
 Product.init(
   {
     id: {
@@ -29,7 +29,6 @@ Product.init(
     },
     category_id: {
       type: DataTypes.INTEGER,
-      // allowNull: false,
       references: {
         model: 'category',
         key: 'id',
