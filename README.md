@@ -12,11 +12,10 @@ When you test API POST, PUT, and DELETE routes in Insomnia Core you are able to 
 
 ## Links
 **GitHub:** https://github.com/david-leverenz/e-commerce<br>
-**Walkthrough Video:** <br>
+**Walkthrough Video:** https://drive.google.com/file/d/1a5SECLfUglTfsPTKGRlMBF-dqcoCR1vO/view<br>
 **Live Link:** N/A <br>
 **Screen Shot:** <br>
-
-
+![image](https://github.com/david-leverenz/e-commerce/assets/131185593/02ccbdc1-a9ec-46c5-8033-62eb841dbe20)
 
 ## Getting Started
 N/A
@@ -33,4 +32,4 @@ Version 1.0 Initial Release
 ## License
 This project is licensed under the MIT license.
 ## Acknowledgments
-Special thanks to Poornima for helping me get the first thing done.  Very special thanks to my tutor Erik Hirsch for helping me get one of the more complicated inserts done.
+Special thanks to Springhill Suites, which is where I did most of the work for this homework.  The room was gross and noisy, the workkspace adequate and the carpet was so gross I had to put my shoes on to use the rest room.  I was able to get extra towels, though.  It's good to be alive.
